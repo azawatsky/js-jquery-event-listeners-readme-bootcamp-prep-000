@@ -6,14 +6,24 @@ function getIt(){
 
 function frameIt(){
   $('img').on('load',function(){
-    $('img').addClass("tasty")
+    $('img').addClass("tasty");
   });
 }
 
+function pressIt(){
+  $('input').on('keydown',function(){
+    if (key === "G"){
+      alert("You have pressed G");
+    }
+  });
+}
 
+function submitIt(){
+  $('form').on('submit',function(){
+    alert('Your form is going to be submitted now.');
+  });
+}
 
 $(document).ready(function(){
-  $('h1').on('eventname',function(){
-    
-  })
+
 });
